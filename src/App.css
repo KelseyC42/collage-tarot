@@ -322,3 +322,90 @@ h1 {
   font-size: 1.1rem;
   font-style: italic;
 }
+
+@media (max-width: 768px) {
+  .site {
+    padding: 35px 18px;
+  }
+
+  h1 {
+    font-size: 3.2rem;
+    margin: 16px 0 35px 0;
+  }
+
+  .description {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .modal {
+    width: 92%;
+    max-height: 88vh;
+    padding: 22px;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: auto;
+  }
+
+  .modal-image {
+    width: 100%;
+    max-height: none;
+  }
+
+  .modal h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .card-meaning {
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.6;
+  }
+
+  .back-button {
+    top: 16px;
+    left: 16px;
+    font-size: 0.85rem;
+    padding: 8px 12px;
+  }
+
+  .nav-button {
+    top: auto;
+    bottom: 18px;
+    font-size: 0.85rem;
+    padding: 8px 12px;
+  }
+
+  .prev {
+    left: 16px;
+  }
+
+  .next {
+    right: 16px;
+  }
+
+  .sound-button {
+    top: 16px;
+    right: 16px;
+    font-size: 0.85rem;
+    padding: 8px 12px;
+  }
+
+  .about {
+    padding: 70px 20px;
+  }
+
+  .about h2 {
+    font-size: 2rem;
+  }
+
+  .about p {
+    font-size: 1rem;
+  }
+}
