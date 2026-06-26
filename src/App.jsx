@@ -172,6 +172,11 @@ const cards = [
     image: "/images/36_Queen_of_Swords.png",
     meaning: "Truth spoken wiht wisdom. Clear boundaries, intelligence tempered by compassion."
   },
+  {
+    name: "King of Sowrds",
+    image: "/images/24_King_of_Swords",
+    meaning: "Wisdom guided by truth. Fair judgment. Clear thinking and principled action."
+  },
 
   {
     name: "Page of Pentacles",
