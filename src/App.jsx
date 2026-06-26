@@ -174,7 +174,7 @@ const cards = [
   },
   {
     name: "King of Sowrds",
-    image: "/images/24_King_of_Swords.png",
+    image: "/images/24_K_Swords.png",
     meaning: "Wisdom guided by truth. Fair judgment. Clear thinking and principled action."
   },
 
