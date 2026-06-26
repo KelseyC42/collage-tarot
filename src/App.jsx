@@ -203,6 +203,7 @@ const cards = [
 function App() {
   const [selectedCard, setSelectedCard] = useState(null)
   const [audioPlaying, setAudioPlaying] = useState(false)
+  const [entered, setEntered] = useState(false)
   const audioRef = useRef(null)
 
   const currentIndex = cards.findIndex(
@@ -263,10 +264,35 @@ function App() {
     }
   }, [selectedCard])
 
+  
+const enterExhibition = () => {
+  setEntered(true)
+
+  setTimeout(() => {
+    toggleAudio()
+  }, 50)
+}
+if (!entered) {
   return (
-    <div className="site">
+    <div className="intro-screen">
+      <img
+  src="/images/logo.png"
+  alt="Collage Tarot Logo"
+  className="intro-logo"
+/>
+      <h1>Collage Tarot Exhibition</h1>
+      <p>A handmade tarot deck created from paper, intuition, and images.</p>
+
+     <button onClick={enterExhibition}>
+  Enter the Exhibition
+</button>
+    </div>
+  )
+}
+return (
+  <div className="site">
       <audio ref={audioRef} loop>
-        <source src="/audio/ritual-ambient.mp3" type="audio/mpeg" />
+        <source src="/audio/ikoliks_aj-meditation-background-music-386976.mp3" type="audio/mpeg" />
       </audio>
 
       <button className="sound-button" onClick={toggleAudio}>
@@ -274,10 +300,10 @@ function App() {
       </button>
 
       <header className="hero">
-        <p className="subtitle">MAJOR ARCANA EXHIBITION</p>
+        <p className="subtitle">TAROT EXHIBITION</p>
         <h1>Collage Tarot</h1>
         <p className="description">
-          An exhibition of the Major Arcana through collage.
+          An exhibition of the tarot through collage.
         </p>
       </header>
 
