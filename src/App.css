@@ -408,4 +408,27 @@ h1 {
   .about p {
     font-size: 1rem;
   }
+
+  .draw-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  padding: 0 10px;
+}
+
+.draw-button {
+  width: fit-content;
+  max-width: 100%;
+  font-size: 1rem;
+  padding: 12px 22px;
+}
+
+.draw-subtitle {
+  text-align: center;
+  max-width: 280px;
+  line-height: 1.5;
+  margin-top: 14px;
+}
 }
