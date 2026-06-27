@@ -272,20 +272,18 @@ useEffect(() => {
 
   
 const enterExhibition = () => {
-  setFadeOut(true);
+  setFadeOut(true)
 
   setTimeout(() => {
-    setEntered(true);
+    setEntered(true)
 
-    requestAnimationFrame(() => {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
-    });
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    })
 
-    toggleAudio();
-  }, 650);
+    setTimeout(toggleAudio, 50)
+  }, 650)
 };
 if (!entered) {
   return (
